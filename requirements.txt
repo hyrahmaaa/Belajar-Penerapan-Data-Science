@@ -1,0 +1,8 @@
+pandas==2.2.2
+numpy==2.0.2
+matplotlib==3.10.0
+seaborn==0.13.2
+scikit-learn==1.6.1
+xgboost==2.1.4
+scipy==1.15.3
+google-colab @ file:///colabtools/dist/google_colab-1.0.0.tar.gz

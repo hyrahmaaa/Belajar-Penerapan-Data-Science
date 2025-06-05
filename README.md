@@ -86,26 +86,26 @@ Dari semua peran pekerjaan, Teknisi Laboratorium (Teknik Laboratorium) menunjukk
      - Jarak dari Rumah: Rata-rata jarak dari rumah ke tempat kerja bagi karyawan yang keluar adalah 10.37 km. Jarak yang signifikan ini bisa berkontribusi pada kelelahan atau ketidaknyamanan, yang pada akhirnya memicu attrition.
      - Penghasilan Bulanan: Karyawan yang keluar memiliki rata-rata penghasilan bulanan sekitar 4,872.94 dollar. Penting untuk membandingkan angka ini dengan rata-rata penghasilan di seluruh perusahaan dan pasar untuk menilai apakah kompensasi menjadi isu.
 
-- Tingkat Kepuasan Kerja Rendah:
-Secara konsisten, karyawan yang melaporkan tingkat kepuasan kerja yang lebih rendah cenderung memiliki probabilitas attrition yang lebih tinggi. Ini adalah indikator langsung bahwa ketidakpuasan terhadap pekerjaan itu sendiri adalah pendorong utama karyawan untuk mencari peluang lain.
+- Tingkat Kepuasan Kerja yang rendah pada posisi kedua:
+Secara konsisten, karyawan yang melaporkan tingkat kepuasan kerja yang lebih rendah diposisi kedua sebesar 25,7% cenderung memiliki probabilitas attrition yang lebih tinggi. Ini adalah indikator langsung bahwa ketidakpuasan terhadap pekerjaan itu sendiri adalah pendorong utama karyawan untuk mencari peluang lain.
 
-- Tingkat Keterlibatan Kerja Rendah:
-Rendahnya tingkat keterlibatan dalam pekerjaan juga merupakan indikator kuat potensi attrition. Karyawan yang merasa tidak terhubung atau kurang berinvestasi secara emosional dalam pekerjaan mereka lebih mudah untuk pergi.
+- Tingkat Keterlibatan Kerja yang sangat tinggi:
+Terlalu tinggi tingkat keterlibatan dalam pekerjaan juga merupakan indikator kuat potensi attrition. Karyawan yang merasa tertekan dan memiliki beban kerja berlebih secara emosional dalam pekerjaan mereka lebih mudah untuk pergi.
 
 - Kualitas Lingkungan Kerja yang Rendah:
 Penilaian lingkungan kerja yang rendah secara signifikan mempengaruhi kecenderungan attrition. Lingkungan yang tidak mendukung, kurang nyaman, atau tidak aman dapat menjadi faktor pendorong karyawan untuk mencari tempat kerja lain.
 
-- Keseimbangan Kerja dan Hidup (Work-Life Balance) yang Buruk:
-Karyawan yang melaporkan keseimbangan kerja dan hidup yang tidak optimal atau buruk lebih rentan untuk meninggalkan perusahaan. Tekanan berlebihan, jam kerja yang tidak fleksibel, atau kurangnya dukungan untuk kehidupan pribadi dapat menyebabkan kelelahan dan attrition.
+- Keseimbangan Kerja dan Hidup (Work-Life Balance) yang Terlalu Baik:
+Karyawan yang melaporkan keseimbangan kerja dan hidup yang terlalu baik cenderung attrition bisa didukung dengan keterangan tiada tantangan dan pertumbuhan karir.
 
 - Tingkat Opsi Saham yang Rendah:
 Ada korelasi antara tingkat opsi saham yang lebih rendah dengan peningkatan attrition. Ini bisa menunjukkan bahwa opsi saham berfungsi sebagai insentif jangka panjang yang signifikan, dan ketiadaannya dapat mengurangi loyalitas karyawan.
 
 - Tingkat Jabatan (Job Level) Tertentu:
-Analisis menunjukkan bahwa tingkat jabatan (Job Level) tertentu mungkin menunjukkan risiko attrition yang lebih tinggi. Ini mengindikasikan potensi isu pada struktur karir atau skema kompensasi yang tidak menarik di level-level tersebut.
+Analisis menunjukkan bahwa tingkat jabatan (Job Level) 0 menunjukkan risiko attrition yang lebih tinggi. Ini mengindikasikan potensi isu pada struktur karir atau skema kompensasi yang tidak menarik di level-level tersebut.
 
 - Bidang Pendidikan Spesifik:
-Karyawan dari bidang pendidikan tertentu menunjukkan kecenderungan lebih tinggi untuk melakukan attrition. Hal ini memerlukan investigasi lebih lanjut untuk memahami mengapa bidang pendidikan ini lebih rentan, apakah karena prospek karir di luar perusahaan lebih menarik atau ada isu spesifik terkait relevansi pendidikan mereka dengan pekerjaan di Jaya Jaya Maju.
+Karyawan dari bidang pendidikan Life Sciences menunjukkan kecenderungan lebih tinggi untuk melakukan attrition. Hal ini memerlukan investigasi lebih lanjut untuk memahami mengapa bidang pendidikan ini lebih rentan, apakah karena prospek karir di luar perusahaan lebih menarik atau ada isu spesifik terkait relevansi pendidikan mereka dengan pekerjaan di Jaya Jaya Maju.
 
 Untuk memfasilitasi pemantauan berkelanjutan dan pemahaman yang lebih baik oleh departemen HR, sebuah dashboard visualisasi yang komprehensif telah dirancang dan dikembangkan. Dashboard ini menyajikan metrik kunci terkait attrition, tren dari waktu ke waktu, dan perbandingan attrition berdasarkan berbagai faktor demografis dan terkait pekerjaan. Visualisasi ini bertujuan untuk memberikan wawasan yang actionable bagi HR untuk memahami pola attrition dan mengidentifikasi area fokus untuk upaya retensi karyawan.
 

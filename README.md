@@ -15,24 +15,18 @@ Permasalahan bisnis utama yang akan diselesaikan adalah:
 
 Cakupan proyek ini meliputi:
 - Analisis Data Karyawan: Menganalisis dataset yang disediakan oleh Jaya Jaya Maju untuk mengidentifikasi pola, korelasi, dan faktor-faktor yang mempengaruhi attrition karyawan.
-- Pengembangan Model Machine Learning: Membangun model machine learning yang mampu memprediksi potensi attrition karyawan berdasarkan data yang ada.
+- Pengembangan Model Machine Learning: Membangun model machine learning yang mampu menganalisis akurasi faktor yang memiliki potensi attrition karyawan berdasarkan data yang ada.
 - Pembuatan Dashboard Visualisasi: Merancang dan mengembangkan dashboard interaktif yang memungkinkan departemen HR untuk memonitor tingkat attrition, mengidentifikasi faktor-faktor kunci, dan melacak tren dari waktu ke waktu.
 
 ### Persiapan
 
 Sumber data: https://github.com/dicodingacademy/dicoding_dataset/tree/main/employee
 
-Setup environment (Google Colab):
-Persiapan
-
-Sumber data: https://github.com/dicodingacademy/dicoding_dataset/tree/main/employee
-
 ### Setup Environment
 
 Proyek ini dikembangkan menggunakan Python dan disarankan untuk dijalankan dalam lingkungan virtual (virtual environment) untuk mengelola dependensi secara terisolasi.
-
 1.  **Membuat dan Mengaktifkan Virtual Environment (venv)**
-    Buka terminal atau command prompt Anda, lalu ikuti langkah-langkah berikut:
+    Buka terminal atau command prompt, lalu ikuti langkah-langkah berikut:
     ```bash
     # Membuat virtual environment baru bernama 'venv_attrition'
     python3 -m venv venv_attrition
@@ -45,30 +39,21 @@ Proyek ini dikembangkan menggunakan Python dan disarankan untuk dijalankan dalam
     # Untuk Windows (PowerShell):
     venv_attrition\Scripts\Activate.ps1
     ```
-    Setelah diaktifkan, Anda akan melihat `(venv_attrition)` di awal baris perintah Anda, menandakan bahwa Anda berada di lingkungan virtual.
+    Setelah diaktifkan, akan terlihat `(venv_attrition)` di awal baris perintah yang menandakan bahwa sudah berada di lingkungan virtual.
 
 2.  **Menginstal Dependensi dari `requirements.txt`**
-    Pastikan Anda telah mengaktifkan virtual environment Anda (langkah 1). Kemudian, instal semua pustaka Python yang dibutuhkan dari berkas `requirements.txt` (yang harus Anda sediakan di root proyek Anda) menggunakan pip:
+    Pastikan  telah mengaktifkan virtual environment (langkah 1). Kemudian, instal semua pustaka Python yang dibutuhkan dari berkas `requirements.txt` menggunakan pip:
     ```bash
     pip install -r requirements.txt
     ```
-    Ini akan menginstal semua *library* yang diperlukan seperti `pandas`, `scikit-learn`, `matplotlib`, `seaborn`, dll.
+    Ini akan menginstal semua *library* yang diperlukan.
 
 3.  **Akses Data**
-    * **Untuk Lingkungan Lokal:** Pastikan Anda telah mengunduh dataset dari [tautan sumber data](https://github.com/dicodingacademy/dicoding_dataset/tree/main/employee) dan meletakkannya di lokasi yang sesuai dengan path yang digunakan dalam skrip Python.
-    * **Untuk Google Colab:** Jika Anda menjalankan proyek di Google Colab, Anda perlu mengunggah file dataset ke Google Drive Anda dan melakukan *mount* Google Drive di Colab untuk mengaksesnya. Instruksi *mounting* dapat ditemukan di notebook Colab Anda (misalnya: `from google.colab import drive; drive.mount('/content/gdrive/')`).
+    * **Untuk Lingkungan Lokal:** Pastikan  telah mengunduh dataset dari (https://github.com/dicodingacademy/dicoding_dataset/tree/main/employee) dan meletakkannya di lokasi yang sesuai dengan path yang digunakan dalam skrip Python.
+    * **Untuk Google Colab:** Jika  menjalankan proyek di Google Colab maka perlu mengunggah file dataset ke Google Drive  dan melakukan *mount* Google Drive di Colab untuk mengaksesnya. Instruksi *mounting* dapat ditemukan di notebook Colab  (misalnya: `from google.colab import drive; drive.mount('/content/gdrive/')`).
 
 4.  **Cara Menjalankan Skrip Python (.py)**
-    Setelah virtual environment diaktifkan dan semua dependensi terinstal, Anda dapat menjalankan skrip utama proyek. Asumsikan skrip utama Anda adalah `main.py` (Anda bisa mengganti nama ini sesuai dengan nama file skrip Anda, misalnya `train_model.py` atau `analyze_data.py`).
-    ```bash
-    # Contoh menjalankan skrip utama tanpa parameter tambahan
-    python main.py
-
-    # Jika skrip Anda membutuhkan parameter (misalnya, path ke data atau mode operasi):
-    # python main.py --data_path ./data/employee_data.csv --mode predict
-    # Pastikan untuk merujuk pada dokumentasi internal skrip Anda untuk detail parameter.
-    ```
-    Hasil analisis, model yang disimpan, atau output lainnya akan dihasilkan sesuai dengan logika skrip Anda.
+    Setelah virtual environment diaktifkan dan semua dependensi terinstal, maka dapat dijalankan skrip utama proyek. Skrip utama adalah `notebook.py`. Hasil analisis, model yang disimpan, atau output lainnya akan dihasilkan sesuai dengan logika skrip.
 
 ## Business Dashboard
 
@@ -78,26 +63,51 @@ Dashboard ini dirancang untuk memberikan pemahaman yang mendalam tentang attriti
 
 ## Conclusion
 
-Proyek ini berhasil melakukan analisis mendalam terhadap data karyawan Jaya Jaya Maju untuk mengidentifikasi berbagai faktor yang berpotensi mempengaruhi tingginya tingkat attrition karyawan. Melalui eksplorasi data dan analisis statistik (seperti uji Chi-square dan t-test), korelasi dan perbedaan signifikan antara berbagai fitur karyawan  dengan status attrition berhasil diungkap.
-
-Conclusion
-
 Proyek ini berhasil melakukan analisis mendalam terhadap data karyawan Jaya Jaya Maju untuk mengidentifikasi berbagai faktor yang berpotensi mempengaruhi tingginya tingkat attrition karyawan. Melalui eksplorasi data dan analisis statistik (seperti uji Chi-square dan t-test), korelasi dan perbedaan signifikan antara berbagai fitur karyawan dengan status attrition berhasil diungkap.
 
-Adapu karakteristik umum karyawan yang melakukan attrition:
-- Masa Kerja dengan Manajer yang Lebih Singkat: Karyawan dengan rata-rata masa kerja yang lebih singkat dengan manajer saat ini memiliki kecenderungan lebih tinggi untuk keluar.
-- Tingkat Kepuasan Kerja Rendah: Karyawan yang menunjukkan tingkat kepuasan kerja yang lebih rendah cenderung memiliki probabilitas attrition yang lebih tinggi.
-- Tingkat Keterlibatan Kerja Rendah: Rendahnya tingkat keterlibatan dalam pekerjaan juga merupakan indikator kuat potensi attrition.
-- Keseimbangan Kerja dan Hidup yang Buruk: Karyawan yang melaporkan keseimbangan kerja dan hidup yang tidak optimal lebih rentan untuk meninggalkan perusahaan.
-- Tingkat Opsi Saham yang Rendah: Ada korelasi antara tingkat opsi saham yang lebih rendah dengan peningkatan attrition.
-- Tingkat Jabatan (Job Level) Tertentu: Tingkat jabatan tertentu mungkin menunjukkan risiko attrition yang lebih tinggi, mengindikasikan isu pada struktur karir atau kompensasi di level tersebut.
-- Bidang Pendidikan Spesifik: Karyawan dari bidang pendidikan tertentu menunjukkan kecenderungan lebih tinggi untuk melakukan attrition, memerlukan investigasi lebih lanjut terkait relevansi atau prospek karir.
+Adapun karakteristik umum karyawan yang melakukan attrition:
+- Masa Kerja dengan Manajer yang Lebih Singkat:
+Karyawan yang memiliki rata-rata masa kerja yang lebih singkat dengan manajer saat ini (sekitar 2.9 tahun) menunjukkan kecenderungan lebih tinggi untuk keluar. Ini mengindikasikan bahwa hubungan atau durasi interaksi dengan manajer langsung bisa menjadi faktor penting dalam keputusan karyawan untuk bertahan.
+
+- Masa Kerja dengan Current Role yang Lebih Singkat:
+Mirip dengan masa kerja dengan manajer, karyawan yang memiliki masa kerja lebih pendek di peran mereka saat ini (rata-rata 2.99 tahun) juga memiliki probabilitas attrition yang lebih tinggi. Hal ini mungkin menunjukkan ketidakpuasan dengan peran yang sedang dijalani atau kurangnya kesempatan untuk berkembang dalam peran tersebut.
+
+- Status Pernikahan: Banyak Pekerja yang Masih Single:
+Data menunjukkan bahwa proporsi karyawan yang masih single lebih tinggi di antara mereka yang melakukan attrition. Ini bisa berarti karyawan single memiliki fleksibilitas lebih besar atau pertimbangan hidup yang berbeda dibandingkan mereka yang sudah menikah, sehingga lebih mudah untuk berganti pekerjaan.
+
+- Pola Perjalanan Bisnis: Travel Rarely Lebih Berpotensi Attrition:
+Karyawan yang jarang melakukan perjalanan bisnis (Travel_Rarely) secara paradoks lebih berpotensi untuk keluar. Ini bisa mengindikasikan bahwa karyawan yang jarang bepergian mungkin merasa kurang terlibat, kurang memiliki kesempatan pengembangan, atau kurang terstimulasi dibandingkan mereka yang lebih sering bepergian.
+
+- Peran Pekerjaan (Job Role): Teknisi Laboratorium (Teknik Laboratorium) Cenderung Menunjukkan Attrition Tertinggi:
+Dari semua peran pekerjaan, Teknisi Laboratorium (Teknik Laboratorium) menunjukkan jumlah attrition tertinggi. Hal ini memerlukan investigasi lebih lanjut: apakah ada isu spesifik terkait beban kerja, kompensasi, peluang karir, atau lingkungan di departemen ini?
+
+- Demografi Karyawan yang Attrition:
+     - Rata-rata Usia: Karyawan yang melakukan attrition memiliki rata-rata usia sekitar 33.47 tahun. Ini menunjukkan bahwa attrition banyak terjadi pada karyawan di usia produktif awal hingga menengah.
+     - Jarak dari Rumah: Rata-rata jarak dari rumah ke tempat kerja bagi karyawan yang keluar adalah 10.37 km. Jarak yang signifikan ini bisa berkontribusi pada kelelahan atau ketidaknyamanan, yang pada akhirnya memicu attrition.
+     - Penghasilan Bulanan: Karyawan yang keluar memiliki rata-rata penghasilan bulanan sekitar 4,872.94 dollar. Penting untuk membandingkan angka ini dengan rata-rata penghasilan di seluruh perusahaan dan pasar untuk menilai apakah kompensasi menjadi isu.
+
+- Tingkat Kepuasan Kerja Rendah:
+Secara konsisten, karyawan yang melaporkan tingkat kepuasan kerja yang lebih rendah cenderung memiliki probabilitas attrition yang lebih tinggi. Ini adalah indikator langsung bahwa ketidakpuasan terhadap pekerjaan itu sendiri adalah pendorong utama karyawan untuk mencari peluang lain.
+
+- Tingkat Keterlibatan Kerja Rendah:
+Rendahnya tingkat keterlibatan dalam pekerjaan juga merupakan indikator kuat potensi attrition. Karyawan yang merasa tidak terhubung atau kurang berinvestasi secara emosional dalam pekerjaan mereka lebih mudah untuk pergi.
+
+- Kualitas Lingkungan Kerja yang Rendah:
+Penilaian lingkungan kerja yang rendah secara signifikan mempengaruhi kecenderungan attrition. Lingkungan yang tidak mendukung, kurang nyaman, atau tidak aman dapat menjadi faktor pendorong karyawan untuk mencari tempat kerja lain.
+
+- Keseimbangan Kerja dan Hidup (Work-Life Balance) yang Buruk:
+Karyawan yang melaporkan keseimbangan kerja dan hidup yang tidak optimal atau buruk lebih rentan untuk meninggalkan perusahaan. Tekanan berlebihan, jam kerja yang tidak fleksibel, atau kurangnya dukungan untuk kehidupan pribadi dapat menyebabkan kelelahan dan attrition.
+
+- Tingkat Opsi Saham yang Rendah:
+Ada korelasi antara tingkat opsi saham yang lebih rendah dengan peningkatan attrition. Ini bisa menunjukkan bahwa opsi saham berfungsi sebagai insentif jangka panjang yang signifikan, dan ketiadaannya dapat mengurangi loyalitas karyawan.
+
+- Tingkat Jabatan (Job Level) Tertentu:
+Analisis menunjukkan bahwa tingkat jabatan (Job Level) tertentu mungkin menunjukkan risiko attrition yang lebih tinggi. Ini mengindikasikan potensi isu pada struktur karir atau skema kompensasi yang tidak menarik di level-level tersebut.
+
+- Bidang Pendidikan Spesifik:
+Karyawan dari bidang pendidikan tertentu menunjukkan kecenderungan lebih tinggi untuk melakukan attrition. Hal ini memerlukan investigasi lebih lanjut untuk memahami mengapa bidang pendidikan ini lebih rentan, apakah karena prospek karir di luar perusahaan lebih menarik atau ada isu spesifik terkait relevansi pendidikan mereka dengan pekerjaan di Jaya Jaya Maju.
 
 Untuk memfasilitasi pemantauan berkelanjutan dan pemahaman yang lebih baik oleh departemen HR, sebuah dashboard visualisasi yang komprehensif telah dirancang dan dikembangkan. Dashboard ini menyajikan metrik kunci terkait attrition, tren dari waktu ke waktu, dan perbandingan attrition berdasarkan berbagai faktor demografis dan terkait pekerjaan. Visualisasi ini bertujuan untuk memberikan wawasan yang actionable bagi HR untuk memahami pola attrition dan mengidentifikasi area fokus untuk upaya retensi karyawan.
-
-Secara keseluruhan, proyek ini telah berhasil mengidentifikasi faktor-faktor penting yang terkait dengan attrition karyawan di Jaya Jaya Maju dan menyediakan alat visualisasi yang berharga bagi departemen HR untuk memonitor dan memahami fenomena ini. Hasil analisis dan dashboard ini dapat menjadi dasar yang kuat bagi perusahaan dalam merumuskan strategi retensi karyawan yang lebih efektif dan tepat sasaran.
-
-Untuk memfasilitasi pemantauan berkelanjutan dan pemahaman yang lebih baik oleh departemen HR, sebuah dashboard visualisasi yang komprehensif telah dirancang dan dikembangkan. Dashboard ini menyajikan metrik kunci terkait attrition, tren dari waktu ke waktu, dan perbandingan attrition berdasarkan berbagai faktor demografis dan terkait pekerjaan, seperti departemen, jabatan, usia, tingkat kepuasan, keterlibatan kerja, masa kerja, dan lainnya. Visualisasi ini bertujuan untuk memberikan wawasan yang actionable bagi HR untuk memahami pola attrition dan mengidentifikasi area fokus untuk upaya retensi karyawan.
 
 Secara keseluruhan, proyek ini telah berhasil mengidentifikasi faktor-faktor penting yang terkait dengan attrition karyawan di Jaya Jaya Maju dan menyediakan alat visualisasi yang berharga bagi departemen HR untuk memonitor dan memahami fenomena ini. Hasil analisis dan dashboard ini dapat menjadi dasar yang kuat bagi perusahaan dalam merumuskan strategi retensi karyawan yang lebih efektif dan tepat sasaran.
 
